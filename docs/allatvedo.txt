@@ -3,6 +3,8 @@ Adatbázis neve: allatvedo
 Táblanevek:
 	1)	users
 		user_id	int(3)	UNSIGNED	INDEX
+		vezeteknev	VARCHAR (20)
+		keresztnev	VARCHAR (20)
 		user_name	VARCHAR(30)	primary key
 		user_passworld	TEXT(32)
 
