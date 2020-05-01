@@ -1,17 +1,11 @@
 <div id="cim">
-Üdvözöljük a megújult oldalunkon!
-</div>
-<div id="idezet1">
-<center><i>"Ha megmondható, hogy egy könyv miről szól, akkor az szakkönyv. Azt könnyű kijelenteni, hogy ez és ez a 
-könyv a haltenyésztésről vagy a második világháború harci repülőgépeiről szól. Egy regény mindig sok mindenről szól, nem? (...) 
-Honnan tudjam, hogy miről szólna annak, aki kérdezi?"
-<br>Száraz Miklós György</i></center>
+Üdvözöljük minden kedves Látogatóinkat!<br>
 </div>
 
 <div id="szoveg">
 <h3><center>Megújult kinézet, de a tartalom változatlan!</center></h3>
 <p>Tiszakécske nemcsak a vizek és a napfény, de a kultúra városa is, és ehhez mi is hozzáteszünk egy keveset. Aki nem hiszi, járjon utána! 
-De előbb nézz körbe a weboldalunkon, hisz az ördök a részletekben rejlik! Ha kiváncsi vagy a régebbi oldalunkra, akkor <a href="http://alomfogo.hu/"><i>ide kattintva</i></a> még
+De előbb nézz körbe a weboldalunkon, hisz az ördök a részletekben rejlik! Ha kiváncsi vagy a régebbi oldalunkra, akkor <a href="https://orszagosallatvedorseg.hu/" target="_blank"><i>ide kattintva</i></a> még
 még megnézheted!</p>
 <center><img src="./imagines/eszterhazy.jpg" alt="Eszterházy Péter dedikálás közben"></center><br>
 Nekünk fontos, hogy pezsgő kulturális élet legyen városunkban. Nekünk fontos, hogy magas színvonalú programokat tegyünk elérhetővé. Nekünk fontos, hogy előadó és néző között szorosabbra fűzzük a kapcsolatot. Ezért dolgozunk a Könyvkóstolókon és rendhagyó irodalomórákon immár több mint tíz éve. Ezért dolgozunk a Tiszakécskei Református Egyházközséggel együttműködésben az Ókécskei Zenés Estéken már három éve. Kiállítások, színielőadások váltak elérhetővé, neves írók, zenészek, színészek jártak nálunk. 
