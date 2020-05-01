@@ -1,0 +1,14 @@
+Adatbázis neve: allatvedo
+
+Táblanevek:
+	1)	users
+		user_id	int(3)	UNSIGNED	INDEX
+		user_name	VARCHAR(30)	primary key
+		user_passworld	TEXT(32)
+
+	2)	gallery
+		gallery_id	int(3)		INDEX
+		img_name	VARCHAR(30)	PRIMARY KEY
+		img_user_id	int
+		img_date	timestamp current_timestamp()
+		
