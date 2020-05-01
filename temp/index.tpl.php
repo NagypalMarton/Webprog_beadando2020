@@ -22,18 +22,6 @@ if($oldal['menu']) { ?>
 <header> 
 <img src="./imagines/<?=$fejlec['kepforras']?>" alt="<?=$fejlec['kepalt']?>">
 <h1><?= $fejlec['cim'] ?></h1>
-    
-  <div id="searchbox">
-   <form method="get" action="http://www.google.hu/search"><div class="clear-block">
-    <input type="hidden" name="ie" value="UTF-8" />
-    <input type="hidden" name="oe" value="UTF-8" />
-    <input type="hidden" name="domains" value="nagypalmarton.nhely.hu/" />
-    <input type="hidden" name="sitesearch" value="nagypalmarton.nhely.hu/" />
-    <input type="text" class="form-text" name="q" size="20" maxlength="255" value="" />
-    <input type="submit" class="form-submit" name="btnG" value="Keresés" /></div>
-   </form>
-  </div>
-
 </header>
 <div id="wrapper"> 
             <?php include("./temp/pages/{$keres['fajl']}.tpl.php"); ?>

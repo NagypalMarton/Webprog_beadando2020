@@ -23,11 +23,6 @@ img{
 	padding: 0;
 }
 
-#googlekereso{
-	width: 250px;
-	height:10px;
-}
-
 #contact1{
 	text-align:center;
 }
@@ -60,7 +55,10 @@ margin: 0.25em 0 0.25em 1em;
 color: #DDD;
 text-decoration: none;
 }
-#felsomenu a:hover { background-color:#333}
+#felsomenu a:hover 
+    { 
+        background-color:whitesmoke;
+    }
 p#bekezdes1 {
 clear:left;
 }
@@ -69,17 +67,16 @@ clear:left;
 
 header {
 border-radius: 0px 0px 50px 50px; /* lekerekített sarkok*/
-background-color: gray;
+background-color: lightgreen;
+color: rgb(253, 253, 253);
 padding: 10px;
-/*margin: 10px;*/
 text-align: center;
+font-size:x-small;
 }
 header img {
 display: block;
 margin-left: auto;
 margin-right: auto;
-width:75px;
-height:75px;
 }
 /* Oldal- és nagydoboz stilus beállítása */
 
@@ -170,5 +167,5 @@ h2 {
 border-radius: 50px;
 margin: 15px;
 padding: 10px;
-background-color: gray;
+background-color:darkslategray;
 }

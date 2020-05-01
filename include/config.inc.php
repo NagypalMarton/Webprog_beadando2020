@@ -6,12 +6,12 @@ $ablakcim = array(
 $fejlec = array(
     'kepforras' => 'logo.png',
     'kepalt' => 'logo',
-	'cim' => 'Országos Állatvédőrség Alapítvány',
+	'cim' => 'Az állatok nagy, jogfosztott, néma többség, amely csak a mi segítségünkkel maradhat fenn.<br>/ Gerald Durrell /',
 );
 
 $lablec = array(
     'copyright' => 'Copyright '.date("Y").'.',
-    'ceg' => 'Országos Állatvédőrség Alapítvány – Minden jog fenntartva'
+    'ceg' => 'Országos Állatvédőrség Alapítvány'
 );
 
 $oldalak = array(
