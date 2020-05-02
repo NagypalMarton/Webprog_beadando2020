@@ -164,3 +164,7 @@ margin: 15px;
 padding: 10px;
 background-color:darkslategray;
 }
+
+div#galeria {margin: 0 auto; width: 1050px;}
+div.kep { display: inline-block; }
+div.kep img { width: 200px; } 
