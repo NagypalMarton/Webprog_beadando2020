@@ -1,5 +1,7 @@
 <!-- konfig adatokat helyezünk el, amelyek minden oldallekérés esetén szükségesek lesznek -->
-<html lang="hu"> <!-- Böngészővel tudajuk, hogy az oldal nyelve magyar lesz -->
+<?php session_start(); ?><!-- Adatbázis kezeléshez -->
+<?php if(file_exists('./include/'.$keres['fajl'].'.php')) { include("./include/{$keres['fajl']}.php"); } ?>
+<html lang="hu"> <!-- Böngészővel tudatjuk, hogy az oldal nyelve magyar lesz -->
 <head>
 <meta charset="utf-8">
 <link rel="shortcut icon" href="/imagines/favicon.ico">
@@ -9,19 +11,20 @@
 </head>
 <div id="felsomenu"> 
 <ul> 
-<?php foreach ($oldalak as $url => $oldal) {
-if($oldal['menu']) { ?>
-<li<?= (($oldal == $keres) ? ' class="active"' : '') ?>>
-<a href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
-<?= $oldal['szoveg'] ?></a>
-</li>
-<?php }
-} ?>
+<?php foreach ($oldalak as $url => $oldal) { ?>
+						<?php if(! isset($_SESSION['login']) && $oldal['menun'][0] || isset($_SESSION['login']) && $oldal['menun'][1]) { ?>
+							<li<?= (($oldal == $keres) ? ' class="active"' : '') ?>>
+							<a href="<?= ($url == '/') ? '.' : ('?oldal=' . $url) ?>">
+							<?= $oldal['szoveg'] ?></a>
+							</li>
+						<?php } ?>
+					<?php } ?>
 </ul>
 </div>
 <header> 
 <img src="./imagines/<?=$fejlec['kepforras']?>" alt="<?=$fejlec['kepalt']?>">
 <h1><?= $fejlec['cim'] ?></h1>
+<?php if(isset($_SESSION['login'])) { ?>Bejlentkezve: <strong><?= $_SESSION['csn']." ".$_SESSION['un']." (".$_SESSION['login'].")" ?></strong><?php } ?> <!-- Adatbázis kezeléshez -->
 </header>
 <div id="wrapper"> 
             <?php include("./temp/pages/{$keres['fajl']}.tpl.php"); ?>

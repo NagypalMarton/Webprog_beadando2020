@@ -1,6 +1,6 @@
 <?php //paraméterek beállítása, "sablon"
 $ablakcim = array(
-    'cim' => 'Álomfogó Alapítvány',
+    'cim' => 'Országos Állatvédőrség Alapítvány',
 );
 
 $fejlec = array(
@@ -15,17 +15,21 @@ $lablec = array(
 );
 
 $oldalak = array(
-	'/' => array('fajl' => 'index', 'szoveg' => 'Kezdőlap', 'menu' => 1), //'menu' => 1(megjeleníti) V 0 (nem jeleníti meg)
-	'blog' => array('fajl' => 'blog', 'szoveg' => 'Blog', 'menu' => 1),
-	'elerhetoseg' => array('fajl' => 'elerhetoseg', 'szoveg' => 'Elérhetőség', 'menu' => 1),
-	'rolunk' => array('fajl' => 'aboutme', 'szoveg' => 'Rólunk','menu' => 1),
-	'projektjeink' => array('fajl' => 'projektjeink', 'szoveg' => 'Projektjeink','menu' => 0),
-	'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat','menu' => 0),
+	'/' => array('fajl' => 'index', 'szoveg' => 'Kezdőlap', 'menun' => array(1,1)), //'menu' => 1(megjeleníti) V 0 (nem jeleníti meg)
+	'blog' => array('fajl' => 'blog', 'szoveg' => 'Blog', 'menun' => array(1,1)),
+	'elerhetoseg' => array('fajl' => 'elerhetoseg', 'szoveg' => 'Elérhetőség', 'menun' => array(1,1)),
+	'rolunk' => array('fajl' => 'aboutme', 'szoveg' => 'Rólunk','menun' => array(1,1)),
+	'belep-reg' => array('fajl' => 'belep-reg', 'szoveg' => 'Belépés/Regisztráció','menu' => array(1,0)),
+	'belepes' => array('fajl' => 'belepes', 'szoveg' => '', 'menun' => array(0,0)),
+	'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
+	'regisztracio' => array('fajl' => 'regisztracio', 'szoveg' => '', 'menun' => array(0,0))
+	'projektjeink' => array('fajl' => 'projektjeink', 'szoveg' => 'Projektjeink','menun' => array(0,0)),
+	'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat','menun' => array(0,0)),
 );
 
 $oldaldoboz=array(
-'projektjeink' => array('fajl' => 'projektjeink', 'szoveg' => 'Projektjeink','menu' => 1),
-'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat','menu' => 1),
+'projektjeink' => array('fajl' => 'projektjeink', 'szoveg' => 'Projektjeink','menun' => array(1,1)),
+'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat','menun' => array(1,1)),
 );
 $hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');
 ?>
