@@ -23,8 +23,8 @@ $oldalak = array(
 	'belepes' => array('fajl' => 'belepes', 'szoveg' => '', 'menun' => array(0,0)),
 	'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
 	'regisztracio' => array('fajl' => 'regisztracio', 'szoveg' => '', 'menun' => array(0,0))
-	'projektjeink' => array('fajl' => 'projektjeink', 'szoveg' => 'Projektjeink','menun' => array(0,0)),
-	'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat','menun' => array(0,0)),
+	//'projektjeink' => array('fajl' => 'projektjeink', 'szoveg' => 'Projektjeink','menun' => array(0,0)),
+	//'kapcsolat' => array('fajl' => 'kapcsolat', 'szoveg' => 'Kapcsolat','menun' => array(0,0)),
 );
 
 $oldaldoboz=array(
