@@ -17,7 +17,7 @@ $lablec = array(
 $oldalak = array(
 	'/' => array('fajl' => 'index', 'szoveg' => 'Kezdőlap', 'menun' => array(1,1)), //'menu' => 1(megjeleníti) V 0 (nem jeleníti meg)
 	'blog' => array('fajl' => 'blog', 'szoveg' => 'Blog', 'menun' => array(1,1)),
-	'gallery' => array('fajl' => 'gallery', 'szoveg' => 'Galéria', 'menun' => array(0,1)),
+	'feltolt' =
 	'elerhetoseg' => array('fajl' => 'elerhetoseg', 'szoveg' => 'Elérhetőség', 'menun' => array(1,1)),
 	'rolunk' => array('fajl' => 'aboutme', 'szoveg' => 'Rólunk','menun' => array(1,1)),
 	'belep-reg' => array('fajl' => 'belep-reg', 'szoveg' => 'Belépés/Regisztráció','menu' => array(1,0)),
