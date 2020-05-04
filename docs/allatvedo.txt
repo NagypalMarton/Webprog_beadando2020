@@ -13,4 +13,11 @@ Táblanevek:
 		img_name	VARCHAR(30)	PRIMARY KEY
 		img_user_id	int
 		img_date	timestamp current_timestamp()
+	
+	3)	orokbefogad
+		orokbefogado_neve		VARCHAR(30)
+		orokbefogado_cime		VARCHAR(20)
+		orokbefogado_telefonszama	INT(10)
+		orokbefogadott_allatneve	VARCHAR(15) Primary Key
+		orokbefogadas_ideje		DATETIME
 		
