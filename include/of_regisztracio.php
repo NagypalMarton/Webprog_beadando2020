@@ -1,32 +1,32 @@
 <?php
-    if(isset($_POST['nev']) && isset($_POST['email']) && isset($_POST['magassag']) && isset($_POST['orszag'])) {
+    if(isset($_POST['orokbefogado_neve']) && isset($_POST['orokbefogado_cime']) && isset($_POST['orokbefogado_telefonszama']) && isset($_POST['orokbefogadott_allatneve'])) {
         try {
 
-            $dbh = new PDO('mysql:host=localhost;dbname=zh', 'root', '',
+            $dbh = new PDO('mysql:host=localhost;dbname=allatvedo', 'root', '',
             array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
-            $sqlSelect = "select id from regisztracio where nev = :nev";
+            $sqlSelect = "select orokbefogadott_allatneve from regisztracio where orokbefogado_neve = :orokbefogado_neve";
             $sth = $dbh->prepare($sqlSelect);
-            $sth->execute(array(':nev' => $_POST['nev']));
+            $sth->execute(array(':orokbefogado_neve' => $_POST['orokbefogado_neve']));
             if($row = $sth->fetch(PDO::FETCH_ASSOC)) {
-                $uzenet = "A név már foglalt!";
+                $uzenet = "AZ örökbefogadó már fogadott örökbe kisallátot!";
                 $ujra = "true";
             }
             else {
 
-                $sqlInsert = "insert into regisztracio(id, email, nev, magassag, orszag)
-                              values(0, :email, :nev, :magassag, :orszag)";
+                $sqlInsert = "insert into orokbefogad(orokbefogadas_id, orokbefogado_cime, orokbefogado_neve, orokbefogado_telefonszama, orokbefogadott_allatneve)
+                              values(0, :orokbefogado_cime, :orokbefogado_neve, :orokbefogado_telefonszama, :orokbefogadott_allatneve)";
                 $stmt = $dbh->prepare($sqlInsert);
-                $stmt->execute(array(':email' => $_POST['email'], ':nev' => $_POST['nev'],
-                                    ':magassag' => $_POST['magassag'], ':orszag' => $_POST['orszag']));
+                $stmt->execute(array(':orokbefogado_cime' => $_POST['orokbefogado_cime'], ':orokbefogado_neve' => $_POST['orokbefogado_neve'],
+                                    ':orokbefogado_telefonszama' => $_POST['orokbefogado_telefonszama'], ':orokbefogadott_allatneve' => $_POST['orokbefogadott_allatneve']));
                 if($count = $stmt->rowCount()) {
                     $newid = $dbh->lastInsertId();
-                    $uzenet = "A regisztrációja sikeres.<br>Azonosítója: {$newid}";
+                    $uzenet = "Az örökbefogadás sikeres!<br>Az örökbefogadás azonosítója: {$newid}";
                     $ujra = false;
                 }
                 else {
-                    $uzenet = "A regisztráció nem sikerült.";
+                    $uzenet = "Az örökbefogadása nem sikerült!";
                     $ujra = true;
                 }
             }

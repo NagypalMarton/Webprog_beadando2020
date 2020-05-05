@@ -2,37 +2,36 @@ function ellenoriz() {
   var rendben = true;
   var fokusz = null;
 
-  var nev = document.getElementById("nev");
-  if (nev != null) {
-    if (jelszo.value.length > 9 && nev.value.length <= 40) {
+  var orokbefogado_neve = document.getElementById("orokbefogado_neve");
+  if (orokbefogado_neve != null) {
+    if (orokbefogado_neve.value.length > 6 && orokbefogado_neve.value.length <= 30) {
       rendben = false;
-      nev.style.background = '#f00';
-      fokusz = nev;
+      orokbefogado_neve.style.background = '#f00';
+      fokusz = orokbefogado_neve;
     } else {
-      nev.style.background = '#f99';
+      orokbefogado_neve.style.background = '#f99';
     }
   }
 
-  var email = document.getElementById("email");
-  if (email) {
-    var checkPattern = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-    if (!checkPattern.test(email.value)) {
+  var orokbefogado_cime = document.getElementById("orokbefogado_cime");
+  if (orokbefogado_neve != null) {
+    if (orokbefogado_cime.value.length > 7 && orokbefogado_cime.value.length <= 20) {
       rendben = false;
-      email.style.background = '#f00';
-      fokusz = email;
+      orokbefogado_cime.style.background = '#f00';
+      fokusz = orokbefogado_cime;
     } else {
-      email.style.background = '#f99';
+      orokbefogado_cime.style.background = '#f99';
     }
   }
 
-  var magassag = document.getElementById("magassag");
-  if (magassag) {
-    if (magassag.value.length > 49 && magassag.value.length < 251) {
+  var orokbefogado_telefonszama = document.getElementById("orokbefogado_telefonszama");
+  if (orokbefogado_telefonszama) {
+    if (orokbefogado_telefonszama.value.length !=9) {
       rendben = false;
-      magassag.style.background = '#f00';
-      fokusz = magassag;
+      orokbefogado_telefonszama.style.background = '#f00';
+      fokusz = orokbefogado_telefonszama;
     } else {
-      magassag.style.background = '#f99';
+      orokbefogado_telefonszama.style.background = '#f99';
     }
   }
 

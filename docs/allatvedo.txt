@@ -17,7 +17,7 @@ Táblanevek:
 	3)	orokbefogad
 		orokbefogado_neve		VARCHAR(30)
 		orokbefogado_cime		VARCHAR(20)
-		orokbefogado_telefonszama	INT(10)
+		orokbefogado_telefonszama	INT(9)
 		orokbefogadott_allatneve	VARCHAR(15) Primary Key
-		orokbefogadas_ideje		DATETIME
+		orokbefogadas_id		INDEX	UPDATE-TELNI
 		
