@@ -1,8 +1,5 @@
 
 <?php
-    // Alkalmazás logika:
-   // include('/include/config.inc.php');
-    
     // adatok összegyűjtése:    
     $kepek = array();
     $olvaso = opendir($MAPPA);

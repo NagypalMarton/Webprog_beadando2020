@@ -1,5 +1,5 @@
 <script type="text/javascript" src="of.js"></script>
-<form name="orokbefogad_reg" method="POST" onsubmit="ellenoriz()" action="/include/of_feldolgoz.php">
+<form name="orokbefogad_reg" method="POST" onsubmit="ellenoriz()" action="?oldal=of_feldolgoz.php">
         <div class="box">
           <table>
             <tr>
@@ -9,19 +9,19 @@
                     <td>Örökbefogadó neve</td>
                   </tr>
                   <tr>
-                    <td><input type="text" id="orokbefogado_neve" min="3" max=50 name="orokbefogado_neve" size="30" required></td>
+                    <td><input type="text" id="orokbefogado_neve" min="3" max=50 name="orokbefogado_neve" placeholder="pl.: Kiss Péter" size="30" required></td>
                   </tr>
                   <tr>
                     <td>Örökbefogadó címe</td>
                     </tr>
                     <tr>
-                    <td><input type="text" min="8" max=55 name="orokbefogado_cime" size="30" required></td>
+                    <td><input type="text" min="8" max=55 name="orokbefogado_cime" placeholder="pl.: 1000 Budapest Mátyás király tér 10/2" size="30" required></td>
                   </tr>
                   <tr>
                     <td>Örökbefogadó telefonszáma</td>
                     </tr>
                     <tr>
-                    <td><input id="orokbefogado_telefonszama" type="number" pattern="{11}*" name="orokbefogado_telefonszama" size="30" required></td>
+                    <td><input id="orokbefogado_telefonszama" type="number" pattern="{11}*" name="orokbefogado_telefonszama" placeholder="pl.: 01234567890" size="30" required></td>
                   </tr>
                   <tr>
                     <td>Örökbefogadott állat neve</td>

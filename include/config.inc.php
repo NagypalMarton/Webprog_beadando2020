@@ -22,9 +22,11 @@ $oldalak = array(
 	'rolunk' => array('fajl' => 'aboutme', 'szoveg' => 'Rólunk','menun' => array(1,1)),
 	
 	'belep-reg' => array('fajl' => 'belep-reg', 'szoveg' => 'Belépés/Regisztráció','menun' => array(1,0)),
-	'belep' => array('fajl' => 'belepes', 'szoveg' => '', 'menun' => array(0,0)),
+	'belep' => array('fajl' => 'belep', 'szoveg' => '', 'menun' => array(0,0)),
 	'kilepes' => array('fajl' => 'kilepes', 'szoveg' => 'Kilépés', 'menun' => array(0,1)),
-	'regisztral' => array('fajl' => 'regisztral', 'szoveg' => '', 'menun' => array(0,0))
+	'regisztral' => array('fajl' => 'regisztral', 'szoveg' => '', 'menun' => array(0,0)),
+	'of_feldolgoz' => array('fajl' => 'of_feldolgoz', 'szoveg' => '', 'menun' => array(0,0)),
+	'of_regisztracio' => array('fajl' => 'of_regisztracio', 'szoveg' => '', 'menun' => array(0,0)),
 );
 
 $hiba_oldal = array ('fajl' => '404', 'szoveg' => 'A keresett oldal nem található!');

@@ -4,8 +4,8 @@
         Azonosító: <strong><?= $row['user_id'] ?></strong><br><br>
         Név: <strong><?= $row['vezeteknev']." ".$row['keresztnev'] ?></strong>
     <?php } else { ?>
-        <h1>A bejelentkezés nem sikerült!</h1>
-        <a href="?oldal=belepes" >Próbálja újra!</a>
+        <h1>A bejelentkezés nem sikerült! Rossz felhasználónév vagy jelszó!</h1>
+        <a href="?oldal=belep-reg" >Próbálja újra!</a>
     <?php } ?>
 <?php } ?>
 <?php if(isset($errormessage)) { ?>

@@ -1,1 +1,1 @@
-<h1><center>404! Az oldal jelenleg nem elérhető! Kérem, látogasson vissza később!</center></h1>
+<h1><center>404! Az oldal jelenleg nem elérhető!</center></h1>

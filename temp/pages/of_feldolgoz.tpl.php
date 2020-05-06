@@ -1,4 +1,4 @@
-		<?php
+<?php
 			//szerver oldali ellenőrzés példa
 			if (!isset($_POST['orokbefogado_neve']) || empty($_POST['orokbefogado_neve']) || strlen($_POST['orokbefogado_neve']) < 4 || strlen($_POST['orokbefogado_neve']) > 50) {
 				echo "Örökbefogadó neve: ".$_POST['orokbefogado_neve']. " Hibás!<br>";
@@ -26,7 +26,7 @@
 
 		  if($helyes)
 			 {
-		     	 include("?oldal=of_regisztracio.php");
+		     	 include("?oldal=of_regisztracio");
 			} else 
 			{
 				echo "<h1>Hibás adatok, nincs örökbefogadás!</h1>";
