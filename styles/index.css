@@ -135,6 +135,10 @@ padding: 20px;
 .blogposzt {
     margin-left: 85px;
 }
+h1
+{
+    text-align: center;
+}
 h2 {
     color: green;
 }
@@ -167,4 +171,4 @@ background-color:darkslategray;
 
 div#galeria {margin: 0 auto; width: 1050px;}
 div.kep { display: inline-block; }
-div.kep img { width: 200px; } 
+div.kep img { width: 216px; }

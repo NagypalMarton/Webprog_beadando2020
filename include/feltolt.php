@@ -1,6 +1,6 @@
 <?php
 
-include('config.inc.php');
+include('./include/config.inc.php');
  $uzenet = array();
  if (isset($_POST['kuld'])) {
 foreach($_FILES as $fajl) {

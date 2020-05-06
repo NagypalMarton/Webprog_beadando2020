@@ -15,16 +15,16 @@
                     <td>Örökbefogadó címe</td>
                     </tr>
                     <tr>
-                    <td><input id="orokbefogado_cime" type="number" min="15" max=150 name="orokbefogado_cime" size="30" required></td>
+                    <td><input type="text" min="8" max=55 name="orokbefogado_cime" size="30" required></td>
                   </tr>
                   <tr>
                     <td>Örökbefogadó telefonszáma</td>
                     </tr>
                     <tr>
-                    <td><input id="orokbefogado_telefonszama" type="number" min="6" max=8 name="orokbefogado_telefonszama" size="30" required></td>
+                    <td><input id="orokbefogado_telefonszama" type="number" pattern="{11}*" name="orokbefogado_telefonszama" size="30" required></td>
                   </tr>
                   <tr>
-                    <td>Örökbefogadott állatneve</td>
+                    <td>Örökbefogadott állat neve</td>
                   </tr>
                   <tr>
                     <td><select id="orokbefogadott_allatneve" name="orokbefogadott_allatneve">
@@ -36,6 +36,16 @@
                       </select>
                     </td>
                   </tr>
+<tr>
+<td>Ön jön az állatért?</td>
+</tr> <tr>
+                    <td><select>
+                      <option>IGEN</option>
+                      <option>NEM</option>
+                      </select>
+                    </td>
+                  </tr>
+
                 </table>
                 <input id="kuld" onclick="ellenoriz();" type="submit" value="Küldés">
               </td>
