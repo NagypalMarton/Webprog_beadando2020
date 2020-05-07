@@ -36,7 +36,7 @@
         }
     }
     else {
-        header("Location: index.html");
+        header("Location: regisztral.tpl.php");
     }
 
 
@@ -53,7 +53,7 @@
         <?php if(isset($uzenet)) { ?>
             <h1><?= $uzenet ?></h1>
             <?php if($ujra) { ?>
-                <a href="index.html">Próbálja újra!</a>
+                <a href="/?=regisztral">Próbálja újra!</a>
             <?php } ?>
         <?php } ?>
     </body>

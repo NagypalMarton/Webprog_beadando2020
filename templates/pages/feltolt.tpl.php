@@ -1,6 +1,6 @@
 <?php
     // Alkalmazás logika:
-    $MAPPA = './kepek/';
+    $MAPPA = './images/users_img/';
     $TIPUSOK = array ('.jpg', '.png');
     $MEDIATIPUSOK = array('image/jpeg', 'image/png');
     $DATUMFORMA = "Y.m.d. H:i";
@@ -34,13 +34,13 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Galéria</title>
+    <title>Feltöltés a galériába</title>
     <style type="text/css">
         label { display: block; }
     </style>
 </head>
 <body>
-    <h1>Feltöltés a galériába:</h1>
+    <h2>Feltöltés a galériába:</h2>
 <?php
     if (!empty($uzenet))
     {

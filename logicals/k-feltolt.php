@@ -44,7 +44,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Regisztráció</title>
+        <title>Feltöltés a galériába</title>
         <meta charset="utf-8">
 <link rel="stylesheet" href="stilus.css">
 
@@ -53,7 +53,7 @@
         <?php if(isset($uzenet)) { ?>
             <h1><?= $uzenet ?></h1>
             <?php if($ujra) { ?>
-                <a href="index.html">Sikertelen feltöltés! Próbálja újra!</a>
+                <a href="/?=feltolt">Sikertelen feltöltés! Próbálja újra!</a>
             <?php } ?>
         <?php } ?>
     </body>
