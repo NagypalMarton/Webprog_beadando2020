@@ -1,0 +1,5 @@
+CREATE TABLE `webprog_database`.`galeria` ( `img_id` INT NOT NULL , `img_name` VARCHAR(20) NOT NULL , `img_upload_time` TIME NOT NULL , `user_name` VARCHAR(30) NOT NULL , PRIMARY KEY (`img_name`(20)), INDEX (`img_id`)) ENGINE = InnoDB; 
+CREATE TABLE `webprog_database`.`users` ( `user_id` INT(3) NOT NULL AUTO_INCREMENT , `csaladnev
+CREATE TABLE `webprog_database`.`orokbefogad` ( `orokbefogado_neve` VARCHAR(30) NOT NULL , `orokbefogado_cime` VARCHAR(45) NOT NULL , `orokbefogado_telefonszama` INT NOT NULL , `orokbefogadott_neve` VARCHAR(30) NOT NULL , `orokbefogadas_ideje` DATE NOT NULL ) ENGINE = InnoDB CHARSET=utf8 COLLATE utf8_hungarian_ci; 
+ALTER TABLE galeria
+ADD FOREIGN KEY (user_name) REFERENCES users(user_name); 
