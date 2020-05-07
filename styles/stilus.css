@@ -1,15 +1,24 @@
 header {
-    border-radius: 10px;
-    background-color: yellow;
-    padding: 10px;
-    margin: 10px;
+    border-radius: 20px;
+    background-color: darkcyan;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
 }
 
 header img {
     float: left;
     margin: 20px 10px 0px 10px;
 }
-
+h2
+{
+    text-align: center;
+    color: whitesmoke;
+}
+iframe
+{
+    box-align: center;
+}
 div#wrapper {
     margin: 10px;
 }
@@ -23,7 +32,7 @@ nav {
     margin: 0px 10px 0px 0px;
     top: 0px;
     border-radius: 10px;
-    background-color: #FF6600;
+    background-color: lightskyblue;
 }
 
 nav ul {
@@ -37,12 +46,12 @@ nav ul li {
 }
 
 nav ul li.active {
-    border-right: 5px solid blue;
+    border-right: 5px solid whitesmoke;
 }
 
 nav ul a {
     text-decoration: none;
-    color: blue;
+    color: white;
 }
 
 div#content {
@@ -66,5 +75,5 @@ footer {
     border-radius: 10px;
     margin: 10px;
     padding: 5px 20px;
-    background-color: #CC99FF;
+    background-color: lightblue;
 }

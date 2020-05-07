@@ -3,7 +3,7 @@
     $TIPUSOK = array ('.jpg', '.png');
     $MEDIATIPUSOK = array('image/jpeg', 'image/png');
     $DATUMFORMA = "Y.m.d. H:i";
-    $MAXMERET = 500*1024;
+    $MAXMERET = 125*270;
 
     $kepek = array();
     $olvaso = opendir($MAPPA);
@@ -24,9 +24,9 @@
     <meta charset="utf-8">
     <title>Galéria</title>
     <style type="text/css">
-        div#galeria {margin: 0 auto; width: 620px;}
+        div#galeria {margin: 0 auto; width: 560px;}
         div.kep { display: inline-block; }
-        div.kep img { width: 200px; }
+        div.kep img { width: 250px; }
     </style>
 </head>
 <body>
