@@ -1,6 +1,10 @@
 <?php
     // Alkalmazás logika:
-    include('config.inc.php');
+    $MAPPA = './kepek/';
+    $TIPUSOK = array ('.jpg', '.png');
+    $MEDIATIPUSOK = array('image/jpeg', 'image/png');
+    $DATUMFORMA = "Y.m.d. H:i";
+    $MAXMERET = 250*512;
     $uzenet = array();   
 
     // Űrlap ellenőrzés:
@@ -46,7 +50,7 @@
         echo '</ul>';
     }
 ?>
-    <form action="feltolt.php" method="post"
+    <form action="/?oldal=k-feltolt" method="post"
                 enctype="multipart/form-data">
         <label>Első:
             <input type="file" name="elso" required>
