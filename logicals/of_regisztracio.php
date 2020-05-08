@@ -2,7 +2,7 @@
     if(isset($_POST['orokbefogado_neve']) && isset($_POST['orokbefogado_cime']) && isset($_POST['orokbefogado_telefonszama']) && isset($_POST['orokbefogadott_allatneve'])) {
         try {
 
-            $dbh = new PDO('mysql:host=localhost;dbname=allatvedo', 'root', '',
+            $dbh = new PDO('mysql:host=localhost;dbname=webprog_database', 'webprog_database', 'webprog_database',
             array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
             $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
 
@@ -36,7 +36,7 @@
         }
     }
     else {
-        header("Location: regisztral.tpl.php");
+        header("Location: index.html");
     }
 
 
@@ -46,14 +46,14 @@
     <head>
         <title>Regisztráció</title>
         <meta charset="utf-8">
-<link rel="stylesheet" href="stilus.css">
+<link rel="stylesheet" href="style.css">
 
     </head>
     <body>
         <?php if(isset($uzenet)) { ?>
             <h1><?= $uzenet ?></h1>
             <?php if($ujra) { ?>
-                <a href="/?=regisztral">Próbálja újra!</a>
+                <a href="index.html">Próbálja újra!</a>
             <?php } ?>
         <?php } ?>
     </body>

@@ -2,7 +2,7 @@
 if(isset($_POST['user_name']) && isset($_POST['user_passworld'])) {
     try {
         // Kapcsolódás
-        $dbh = new PDO('mysql:host=localhost;dbname=webprog_database', 'root', '',
+        $dbh = new PDO('mysql:host=localhost;dbname=webprog_database', 'webprog_database', 'webprog_database',
                         array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
         $dbh->query('SET NAMES utf8 COLLATE utf8_hungarian_ci');
         
